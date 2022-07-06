@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  width: 100%;
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5),
+      50%,
+      rgba(0, 0, 0, 0.5) 50%
+    ),
+    url(imagewater1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 109vh;
+  font-family: "Times New Roman", Times, serif;
+  overflow-x: hidden;
+}
+
+.navbar {
+  width: 1500px;
+  height: 75px;
+  margin: auto;
+  font-family: "Times New Roman", Times, serif;
+}
+.icon {
+  width: 500px;
+  float: left;
+  height: 70px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.logo {
+  color: red;
+  font-size: 35px;
+
+  padding-left: 10px;
+  float: left;
+  padding-top: 10px;
+  font-weight: 700;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.menu {
+  width: 500px;
+  float: left;
+  height: 70px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+ul {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+ul li {
+  list-style: none;
+  margin-left: 62px;
+  margin-top: 27px;
+  font-size: 14px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+  color: red;
+}
+
+.icons a {
+  text-decoration: none;
+  color: white;
+}
+
+.icons i {
+  color: #fff;
+  font-size: 12px;
+  padding-left: 14px;
+  padding-top: 5px;
+  transition: 0.3s ease;
+}
+
+.icons i:hover {
+  color: red;
+}
+
+.form {
+  width: 450px;
+  height: 700px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8),
+    50%,
+    rgba(0, 0, 0, 0.8) 50%
+  );
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  position: absolute;
+  top: 100px;
+  right: 550px;
+  border-radius: 10px;
+  padding: 25px;
+  font-family: "Times New Roman", Times, serif;
+}
+.form h2 {
+  width: 430px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  color: red;
+  font-size: 22px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 2px;
+  padding: 8px;
+}
+
+.form input {
+  width: 450px;
+  height: 25px;
+  background: transparent;
+  border-bottom: 1px solid red;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.form input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.btnn {
+  width: 240px;
+  height: 40px;
+  background: red;
+  border: none;
+  margin-top: 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.4s ease;
+  position: relative;
+  right: 50px;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  left: 85px;
+}
+
+.btnn:hover {
+  background: #fff;
+  color: red;
+}
+
+.btnn a {
+  text-decoration: none;
+  color: #000;
+  font-size: 17px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  /*Normal Screen*/
+
+  .navbar {
+    width: 100%;
+    height: 100px;
+  }
+
+  ul {
+    margin-left: 30px;
+  }
+
+  ul li {
+    margin-left: 60px;
+  }
+
+  ul li a {
+    font-size: 1.6vw;
+  }
+}
+@media screen and (max-width: 1170px) {
+  /*Login Box*/
+  .main {
+    padding-left: 20px;
+    height: 180vh;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  /*Tablet*/
+
+  .logo {
+    margin-left: 140px;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 5vw;
+  }
+  ul {
+    margin-top: -5px;
+    margin-left: 5px;
+  }
+  ul li a {
+    font-size: 2vw;
+  }
+
+  .menu {
+    position: relative;
+    left: 0;
+  }
+  .form {
+    width: 350px;
+    height: 700px;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8),
+      50%,
+      rgba(0, 0, 0, 0.8) 50%
+    );
+    top: 150px;
+
+    position: relative;
+
+    left: 150px;
+    border-radius: 10px;
+    padding: 25px;
+  }
+  .form input {
+    width: 350px;
+    height: 25px;
+    background: transparent;
+    border-bottom: 1px solid red;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+  }
+  .form h2 {
+    width: 350px;
+  }
+  .btnn {
+    position: relative;
+    left: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /*Ipad old version*/
+
+  .logo {
+    margin-left: 10px;
+    font-size: 4vw;
+  }
+
+  ul {
+    margin-top: -25px;
+    margin-left: -5px;
+  }
+  ul li {
+    margin-left: 30px;
+  }
+
+  u li a {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .form {
+    width: 250px;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    position: absolute;
+    left: 25px;
+  }
+  .form h2 {
+    width: 230px;
+  }
+
+  .form input {
+    width: 250px;
+  }
+}

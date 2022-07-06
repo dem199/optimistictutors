@@ -1,0 +1,653 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  width: 100%;
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5),
+      50%,
+      rgba(0, 0, 0, 0.5) 50%
+    ),
+    url(imagewater1.jpg);
+
+  background-size: cover;
+  height: 109vh;
+  font-family: "Times New Roman", Times, serif;
+  overflow-x: hidden;
+}
+
+.navbar {
+  width: 1500px;
+  height: 75px;
+  margin: auto;
+  font-family: "Times New Roman", Times, serif;
+}
+.icon {
+  width: 500px;
+  float: left;
+  height: 70px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.logo {
+  color: red;
+  font-size: 35px;
+
+  padding-left: 10px;
+  float: left;
+  padding-top: 10px;
+  font-weight: 700;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.menu {
+  width: 500px;
+  float: left;
+  height: 70px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+ul {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+ul li {
+  list-style: none;
+  margin-left: 62px;
+  margin-top: 27px;
+  font-size: 14px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+  color: red;
+}
+
+.search {
+  width: 330px;
+  float: right;
+  margin-left: 320px;
+}
+.srch {
+  width: 200px;
+  font-family: "Times New Roman";
+  height: 40px;
+  background: transparent;
+  border: 1px solid red;
+  margin-top: 13px;
+  color: #fff;
+  font-size: 16px;
+  float: left;
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  font-family: "Times New Roman", Times, serif;
+}
+.btn {
+  width: 100px;
+  height: 40px;
+  background: red;
+  border: 2px solid red;
+  margin-top: 13px;
+  color: #fff;
+  font-size: 15px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.srch:focus {
+  outline: none;
+}
+
+.content {
+  width: 1350px;
+  height: auto;
+  margin: auto;
+  color: #fff;
+  position: relative;
+  top: 80px;
+}
+
+.content .par {
+  padding-left: 20px;
+  padding-bottom: 25px;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 1.2px;
+  line-height: 30px;
+  font-size: 15px;
+  width: 500px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.content h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  padding-left: 20px;
+  margin-top: 9px;
+  letter-spacing: 2px;
+}
+
+.content .cn {
+  width: 160px;
+  height: 40px;
+  background: red;
+  border: none;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.content .cn a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s ease;
+}
+.cn:hover {
+  background-color: #fff;
+}
+
+.content span {
+  color: red;
+  font-size: 60px;
+}
+
+.form {
+  width: 250px;
+  height: 380px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8),
+    50%,
+    rgba(0, 0, 0, 0.8) 50%
+  );
+  position: absolute;
+  top: 200px;
+  right: 250px;
+  border-radius: 10px;
+  padding: 25px;
+}
+.form h2 {
+  width: 220px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  color: red;
+  font-size: 22px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 2px;
+  padding: 8px;
+}
+
+.form input {
+  width: 240px;
+  height: 35px;
+  background: transparent;
+  border-bottom: 1px solid red;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.form input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.btnn {
+  width: 240px;
+  height: 40px;
+  background: red;
+  border: none;
+  margin-top: 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.4s ease;
+}
+
+.btnn:hover {
+  background: #fff;
+  color: red;
+}
+
+.btnn a {
+  text-decoration: none;
+  color: #000;
+  font-size: 17px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.form .link {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 17px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.form .link a {
+  text-decoration: none;
+  color: red;
+}
+
+.liw {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: white;
+}
+
+.link {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: white;
+}
+
+.icons a {
+  text-decoration: none;
+  color: white;
+}
+
+.icons i {
+  color: #fff;
+  font-size: 12px;
+  padding-left: 14px;
+  padding-top: 5px;
+  transition: 0.3s ease;
+}
+
+.icons i:hover {
+  color: red;
+}
+
+@media screen and (max-width: 1200px) {
+  /*Normal Screen*/
+
+  .navbar {
+    width: 100%;
+    height: 100px;
+  }
+
+  ul {
+    margin-left: 30px;
+  }
+
+  ul li {
+    margin-left: 60px;
+  }
+
+  ul li a {
+    font-size: 1.6vw;
+  }
+  .search {
+    margin-top: 3px;
+  }
+
+  .srch {
+    height: 40px;
+    width: 190px;
+    font-size: 14px;
+  }
+
+  .btn {
+    height: 40px;
+    width: 80px;
+  }
+  .content {
+    width: 100%;
+  }
+
+  .content .h1,
+  .content span {
+    font-size: 4.5vw;
+  }
+
+  .content .par {
+    width: 400px;
+  }
+  .content .cn {
+    width: 13%;
+    height: 3.5vw;
+    font-size: 1.8vw;
+  }
+  .content a {
+    font-size: 1.6vw;
+  }
+}
+@media screen and (max-width: 1170px) {
+  /*Login Box*/
+  .main {
+    padding-left: 20px;
+    height: 180vh;
+  }
+
+  .form {
+    margin-left: 30px;
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8),
+      50%,
+      rgba(0, 0, 0, 0.8) 50%
+    );
+    position: absolute;
+    top: 420px;
+    left: 50px;
+    border-radius: 10px;
+    padding: 25px;
+    transform: translate(0%, -5%);
+  }
+  .form input {
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid red;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+  }
+
+  .btnn a {
+    font-size: 16px;
+  }
+
+  .form .link a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  /*Tablet*/
+  .content {
+    margin-top: 120px;
+    width: 80%;
+    margin-left: 40px;
+  }
+  .content h1,
+  .content span {
+    font-size: 6vw;
+  }
+
+  .content .par {
+    width: 250px;
+  }
+
+  .content .cn {
+    width: 15%;
+    height: 4.5vw;
+    font-size: 2vw;
+  }
+
+  .content a {
+    font-size: 2vw;
+  }
+  .logo {
+    margin-left: 240px;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 5vw;
+  }
+  ul {
+    margin-top: -5px;
+    margin-left: 5px;
+  }
+  ul li a {
+    font-size: 2vw;
+  }
+
+  .search {
+    margin-top: -20px;
+    margin-left: 60px;
+  }
+
+  .srch {
+    height: 30px;
+    width: 160px;
+    font-size: 12px;
+  }
+
+  .btn {
+    height: 30px;
+    width: 70px;
+  }
+
+  .main {
+    padding-left: 20px;
+    height: 180vh;
+    background: linear-gradient;
+  }
+
+  .form {
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8),
+      50%,
+      rgba(0, 0, 0, 0.8) 50%
+    );
+    position: relative;
+
+    left: 50px;
+    border-radius: 10px;
+    padding: 25px;
+    top: 120px;
+  }
+  .form input {
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid red;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+  }
+
+  .btnn a {
+    font-size: 16px;
+  }
+
+  .form .link a {
+    font-size: 16px;
+  }
+  .menu {
+    position: relative;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /*Ipad old version*/
+
+  .content {
+    width: 400px;
+    margin-top: 80px;
+    margin-left: 10px;
+  }
+
+  .search {
+    margin-top: 40px;
+    margin-left: 42px;
+  }
+  .logo {
+    margin-left: 10px;
+    font-size: 4vw;
+  }
+
+  ul {
+    margin-top: -20px;
+    margin-left: -5px;
+  }
+  ul li {
+    margin-left: 30px;
+  }
+
+  u li a {
+    font-size: 2vw;
+  }
+  .search {
+    margin-top: -10px;
+  }
+  .form {
+    width: 200px;
+    left: 20px;
+  }
+  .form input {
+    width: 200px;
+  }
+  .form h2 {
+    width: 175px;
+  }
+  .btnn {
+    width: 175px;
+  }
+  .par {
+    line-height: 25px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /*Ipad old version*/
+
+  .content {
+    width: 400px;
+    margin-top: 80px;
+    margin-left: 10px;
+  }
+
+  .search {
+    margin-top: 40px;
+    margin-left: 42px;
+  }
+  .logo {
+    margin-left: 10px;
+    font-size: 4vw;
+  }
+
+  ul {
+    margin-top: -20px;
+    margin-left: -5px;
+  }
+  ul li {
+    margin-left: 30px;
+  }
+
+  u li a {
+    font-size: 2vw;
+  }
+  .search {
+    margin-top: -10px;
+  }
+  .form {
+    width: 200px;
+    left: 10px;
+  }
+  .form input {
+    width: 200px;
+  }
+  .form h2 {
+    width: 175px;
+  }
+  .btnn {
+    width: 175px;
+  }
+  .content .par {
+    line-height: 25px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  /*Ipad old version*/
+
+  .content {
+    width: 300px;
+    margin-top: 80px;
+    margin-left: 10px;
+  }
+
+  .search {
+    margin-top: 40px;
+    margin-left: 42px;
+  }
+  .logo {
+    margin-left: 10px;
+    font-size: 4vw;
+  }
+
+  ul {
+    margin-top: -20px;
+    margin-left: -5px;
+  }
+  ul li {
+    margin-left: 30px;
+  }
+
+  u li a {
+    font-size: 2vw;
+  }
+  .search {
+    margin-top: -10px;
+  }
+  .form {
+    width: 200px;
+    left: 10px;
+  }
+  .form input {
+    width: 200px;
+  }
+  .form h2 {
+    width: 175px;
+  }
+  .btnn {
+    width: 175px;
+  }
+  .content .par {
+    line-height: 25px;
+    font-size: 12px;
+  }
+}

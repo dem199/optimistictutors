@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  width: 100%;
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5),
+      50%,
+      rgba(0, 0, 0, 0.5) 50%
+    ),
+    url(imagewater1.jpg);
+
+  background-size: cover;
+  min-height: 120vh;
+  overflow-x: hidden;
+}
+
+.navbar {
+  width: 1500px;
+  height: 75px;
+  margin: auto;
+  font-family: "Times New Roman", Times, serif;
+}
+.icon {
+  width: 500px;
+  float: left;
+  height: 70px;
+}
+
+.logo {
+  color: red;
+  font-size: 35px;
+
+  padding-left: 10px;
+  float: left;
+  padding-top: 10px;
+  font-weight: 700;
+  font-family: "Times New Roman", Times, serif;
+  width: 400px;
+}
+
+.menu {
+  width: 500px;
+  float: left;
+  height: 70px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+ul {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li {
+  list-style: none;
+  margin-left: 62px;
+  margin-top: 27px;
+  font-size: 14px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+  color: red;
+}
+
+.icons a {
+  text-decoration: none;
+  color: white;
+}
+
+.icons i {
+  color: #fff;
+  font-size: 12px;
+  padding-left: 14px;
+  padding-top: 5px;
+  transition: 0.3s ease;
+}
+
+.icons i:hover {
+  color: red;
+}
+ol li {
+  padding-left: 10px;
+}
+.container {
+  color: #fff;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+}
+p {
+  width: 450px;
+  font-family: "Times New Roman", Times, serif;
+  color: #fff;
+  padding-top: 100px;
+  padding-left: 30px;
+  text-justify: inter-word;
+  text-align: justify;
+}
+
+.subject {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8),
+    50%,
+    rgba(0, 0, 0, 0.8) 50%
+  );
+  color: #fff;
+  width: 320px;
+  position: relative;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: small;
+
+  justify-content: center;
+  align-items: center;
+  left: 25px;
+
+  margin: 10px;
+}
+.container2 {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+}
+.mathematics {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8),
+    50%,
+    rgba(0, 0, 0, 0.8) 50%
+  );
+  color: #fff;
+  width: 320px;
+  position: relative;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: small;
+  bottom: 30px;
+  justify-content: center;
+
+  left: 25px;
+  top: 20px;
+  margin: 10px;
+}
+
+.physics {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8),
+    50%,
+    rgba(0, 0, 0, 0.8) 50%
+  );
+  color: #fff;
+  width: 320px;
+  position: relative;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: small;
+  bottom: 30px;
+  justify-content: center;
+
+  left: 25px;
+  top: 20px;
+  margin: 10px;
+}
+
+.chemistry {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8),
+    50%,
+    rgba(0, 0, 0, 0.8) 50%
+  );
+  color: #fff;
+  width: 320px;
+  position: relative;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: small;
+  bottom: 30px;
+  justify-content: center;
+
+  left: 25px;
+  top: 20px;
+  margin: 10px;
+}
+.biology {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8),
+    50%,
+    rgba(0, 0, 0, 0.8) 50%
+  );
+  color: #fff;
+  width: 320px;
+  position: relative;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: small;
+  bottom: 30px;
+  justify-content: center;
+
+  left: 25px;
+  top: 20px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  /*Normal Screen*/
+
+  .navbar {
+    width: 100%;
+    height: 100px;
+  }
+
+  ul {
+    margin-left: 30px;
+  }
+
+  ul li {
+    margin-left: 60px;
+  }
+
+  ul li a {
+    font-size: 1.6vw;
+  }
+}
+@media screen and (max-width: 1170px) {
+  /*Login Box*/
+  .main {
+    padding-left: 20px;
+    height: 220vh;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  /*Tablet*/
+
+  .logo {
+    margin-left: 240px;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 5vw;
+  }
+  ul {
+    margin-top: -5px;
+    margin-left: 5px;
+  }
+  ul li a {
+    font-size: 2vw;
+  }
+
+  .menu {
+    position: relative;
+    left: 0;
+  }
+  .main {
+    min-height: 370vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /*Ipad old version*/
+
+  .main {
+    min-height: 500vh;
+  }
+
+  .logo {
+    margin-left: 10px;
+    font-size: 4vw;
+  }
+
+  ul {
+    margin-top: -25px;
+    margin-left: -5px;
+  }
+  ul li {
+    margin-left: 30px;
+  }
+
+  u li a {
+    font-size: 2vw;
+  }
+
+  .subject {
+    padding-left: 5px;
+    left: 5px;
+  }
+
+  .container {
+    padding-left: 5px;
+  }
+  .container2 {
+    padding-left: 5px;
+  }
+  .mathematics {
+    padding-left: 5px;
+  }
+
+  .chemistry {
+    padding-left: 5px;
+  }
+
+  .biology {
+    padding-left: 5px;
+  }
+
+  .physics {
+    padding-left: 5px;
+  }
+}
+@media screen and (max-width: 375px) {
+  /*Ipad old version*/
+
+  .main {
+    min-height: 375vh;
+  }
+
+  .logo {
+    margin-left: 10px;
+    font-size: 4vw;
+  }
+
+  ul {
+    margin-top: -25px;
+    margin-left: -5px;
+  }
+  ul li {
+    margin-left: 30px;
+  }
+
+  u li a {
+    font-size: 2vw;
+  }
+  .container {
+    min-width: 150px;
+    left: 5px;
+    padding-left: 5px;
+  }
+  .subject {
+    padding-left: 20px;
+    left: 5px;
+    width: 250px;
+  }
+  .mathematics {
+    padding-left: 20px;
+    left: 5px;
+    width: 250px;
+  }
+  .physics {
+    padding-left: 20px;
+    left: 5px;
+    width: 250px;
+  }
+  .chemistry {
+    padding-left: 20px;
+    left: 5px;
+    width: 250px;
+  }
+  .biology {
+    padding-left: 20px;
+    left: 5px;
+    width: 250px;
+    padding-top: 60px;
+  }
+  p {
+    width: 300px;
+
+    padding-top: 20px;
+    padding-left: 5px;
+    text-justify: inter-word;
+    text-align: justify;
+  }
+}
