@@ -91,6 +91,8 @@ ul li a:hover {
 .myself {
   color: #fff;
   font-size: large;
+  text-align: justify;
+  text-justify: inter-word;
 }
 span {
   color: #fff;
@@ -174,7 +176,6 @@ h1 {
 @media screen and (max-width: 1170px) {
   /*Login Box*/
   .main {
-    padding-left: 5px;
     height: 180vh;
   }
 }
@@ -249,7 +250,7 @@ h1 {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 380px) {
   .logo {
     margin-left: 10px;
     font-size: 4vw;
@@ -281,9 +282,9 @@ h1 {
     position: inherit;
   }
   .me {
-    padding-top: 100px;
-    width: 280px;
-    margin-left: 5px;
+    padding: 10px;
+    width: 290px;
+    margin: auto;
   }
   .icons {
     background-color: black;

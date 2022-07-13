@@ -84,9 +84,9 @@ ul li a:hover {
 
 .icons i {
   color: #fff;
-  font-size: 12px;
-  padding-left: 14px;
-  padding-top: 5px;
+  font-size: 15px;
+  padding-left: 33px;
+  padding-top: 25px;
   transition: 0.3s ease;
 }
 
@@ -291,7 +291,7 @@ ul li a:hover {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 380px) {
   .form {
     width: 250px;
     padding: 25px;
@@ -307,5 +307,13 @@ ul li a:hover {
 
   .form input {
     width: 250px;
+  }
+  .icons i {
+    color: #fff;
+    font-size: 12px;
+    padding-left: 14px;
+
+    padding-top: 15px;
+    transition: 0.3s ease;
   }
 }

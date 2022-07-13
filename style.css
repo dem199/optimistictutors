@@ -350,7 +350,6 @@ ul li a:hover {
 @media screen and (max-width: 1170px) {
   /*Login Box*/
   .main {
-    padding-left: 20px;
     height: 180vh;
   }
 
@@ -451,7 +450,6 @@ ul li a:hover {
   }
 
   .main {
-    padding-left: 20px;
     height: 180vh;
     background: linear-gradient;
   }
@@ -601,13 +599,13 @@ ul li a:hover {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 380px) {
   /*Ipad old version*/
 
   .content {
     width: 300px;
-    margin-top: 80px;
-    margin-left: 10px;
+
+    margin: auto;
   }
 
   .search {
@@ -634,20 +632,40 @@ ul li a:hover {
     margin-top: -10px;
   }
   .form {
-    width: 200px;
+    width: 210px;
     left: 10px;
   }
   .form input {
-    width: 200px;
+    width: 205px;
   }
   .form h2 {
-    width: 175px;
+    width: 180px;
   }
   .btnn {
-    width: 175px;
+    width: 200px;
   }
   .content .par {
     line-height: 25px;
     font-size: 12px;
+  }
+
+  .icons i {
+    color: #fff;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+  }
+  .content .cn {
+    width: 60px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content .cn a {
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
   }
 }

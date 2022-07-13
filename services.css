@@ -75,24 +75,9 @@ ul li a:hover {
   color: red;
 }
 
-.icons a {
-  text-decoration: none;
-  color: white;
-}
-
-.icons i {
-  color: #fff;
-  font-size: 12px;
-  padding-left: 14px;
-  padding-top: 5px;
-  transition: 0.3s ease;
-}
-
-.icons i:hover {
-  color: red;
-}
 ol li {
   padding-left: 10px;
+  list-style: none;
 }
 .container {
   color: #fff;
@@ -241,7 +226,6 @@ p {
 @media screen and (max-width: 1170px) {
   /*Login Box*/
   .main {
-    padding-left: 20px;
     height: 220vh;
   }
 }
@@ -297,15 +281,17 @@ p {
   }
 
   .subject {
-    padding-left: 5px;
-    left: 5px;
+    padding-left: 20px;
+    left: 20px;
   }
 
   .container {
-    padding-left: 5px;
+    position: relative;
+    left: 20px;
   }
   .container2 {
-    padding-left: 5px;
+    align-items: center;
+    align-content: center;
   }
   .mathematics {
     padding-left: 5px;
@@ -323,7 +309,7 @@ p {
     padding-left: 5px;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 380px) {
   /*Ipad old version*/
 
   .main {
@@ -381,7 +367,7 @@ p {
     width: 300px;
 
     padding-top: 20px;
-    padding-left: 5px;
+    padding-left: 15px;
     text-justify: inter-word;
     text-align: justify;
   }
