@@ -24,22 +24,30 @@
   margin: auto;
   font-family: "Times New Roman", Times, serif;
 }
-.icon {
-  width: 500px;
+.icon img {
+  width: 150px;
   float: left;
-  height: 70px;
+  height: 130px;
+  font-family: "Times New Roman", Times, serif;
+  left: 15px;
+
+  position: relative;
+  flex-basis: 60%;
+  display: flex;
 }
 
 .logo {
   color: red;
-  font-size: 35px;
-
-  padding-left: 10px;
+  font-size: 15px;
+  left: 15px;
   float: left;
-  padding-top: 10px;
+  padding-top: 100px;
+
   font-weight: 700;
   font-family: "Times New Roman", Times, serif;
-  width: 400px;
+  z-index: 1;
+  position: absolute;
+  flex-basis: 60%;
 }
 
 .menu {

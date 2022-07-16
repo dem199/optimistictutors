@@ -14,39 +14,51 @@
     url(imagewater1.jpg);
 
   background-size: cover;
-  height: 109vh;
+  min-height: 100vh;
   font-family: "Times New Roman", Times, serif;
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .navbar {
   width: 1500px;
-  height: 75px;
-  margin: auto;
+  height: 130px;
+
   font-family: "Times New Roman", Times, serif;
 }
-.icon {
-  width: 500px;
+.icon img {
+  width: 150px;
   float: left;
-  height: 70px;
+  height: 130px;
   font-family: "Times New Roman", Times, serif;
+  left: 15px;
+
+  position: relative;
+  flex-basis: 60%;
+  display: flex;
 }
 
 .logo {
   color: red;
-  font-size: 35px;
-
-  padding-left: 10px;
+  font-size: 15px;
+  left: 15px;
   float: left;
-  padding-top: 10px;
+  padding-top: 100px;
+
   font-weight: 700;
   font-family: "Times New Roman", Times, serif;
+  z-index: 1;
+  position: absolute;
+  flex-basis: 60%;
 }
 
 .menu {
   width: 500px;
   float: left;
   height: 70px;
+
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -124,7 +136,7 @@ ul li a:hover {
   margin: auto;
   color: #fff;
   position: relative;
-  top: 80px;
+  top: 5px;
 }
 
 .content .par {
@@ -183,7 +195,7 @@ ul li a:hover {
     rgba(0, 0, 0, 0.8) 50%
   );
   position: absolute;
-  top: 200px;
+  top: 250px;
   right: 250px;
   border-radius: 10px;
   padding: 25px;
@@ -293,227 +305,32 @@ ul li a:hover {
   color: red;
 }
 
-@media screen and (max-width: 1200px) {
-  /*Normal Screen*/
+@media screen and (max-width: 400px) {
+  /*Ipad old version*/
 
+  .main {
+    min-height: 150vh;
+    min-width: 100%;
+  }
   .navbar {
-    width: 100%;
-    height: 100px;
+    min-weight: 70%;
   }
 
-  ul {
-    margin-left: 30px;
-  }
-
-  ul li {
-    margin-left: 60px;
-  }
-
-  ul li a {
-    font-size: 1.6vw;
+  .icon {
+    min-width: 90%;
   }
   .search {
-    margin-top: 3px;
-  }
-
-  .srch {
-    height: 40px;
-    width: 190px;
-    font-size: 14px;
-  }
-
-  .btn {
-    height: 40px;
-    width: 80px;
-  }
-  .content {
-    width: 100%;
-  }
-
-  .content .h1,
-  .content span {
-    font-size: 4.5vw;
-  }
-
-  .content .par {
-    width: 400px;
-  }
-  .content .cn {
-    width: 13%;
-    height: 3.5vw;
-    font-size: 1.8vw;
-  }
-  .content a {
-    font-size: 1.6vw;
-  }
-}
-@media screen and (max-width: 1170px) {
-  /*Login Box*/
-  .main {
-    height: 180vh;
-  }
-
-  .form {
-    margin-left: 30px;
-    width: 250px;
-    height: 380px;
-    background: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.8),
-      50%,
-      rgba(0, 0, 0, 0.8) 50%
-    );
-    position: absolute;
-    top: 420px;
-    left: 50px;
-    border-radius: 10px;
-    padding: 25px;
-    transform: translate(0%, -5%);
-  }
-  .form input {
-    width: 240px;
-    height: 35px;
-    background: transparent;
-    border-bottom: 1px solid red;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    color: #fff;
-    font-size: 15px;
-    letter-spacing: 1px;
-    margin-top: 30px;
-    font-family: sans-serif;
-  }
-
-  .btnn a {
-    font-size: 16px;
-  }
-
-  .form .link a {
-    font-size: 16px;
-  }
-}
-
-@media screen and (max-width: 830px) {
-  /*Tablet*/
-  .content {
-    margin-top: 120px;
-    width: 80%;
-    margin-left: 40px;
-  }
-  .content h1,
-  .content span {
-    font-size: 6vw;
-  }
-
-  .content .par {
-    width: 250px;
-  }
-
-  .content .cn {
-    width: 15%;
-    height: 4.5vw;
-    font-size: 2vw;
-  }
-
-  .content a {
-    font-size: 2vw;
-  }
-  .logo {
-    margin-left: 240px;
-    width: 100%;
-    margin-top: 15px;
-    font-size: 5vw;
-  }
-  ul {
-    margin-top: -5px;
-    margin-left: 5px;
-  }
-  ul li a {
-    font-size: 2vw;
-  }
-
-  .search {
-    margin-top: -20px;
-    margin-left: 60px;
-  }
-
-  .srch {
-    height: 30px;
-    width: 160px;
-    font-size: 12px;
-  }
-
-  .btn {
-    height: 30px;
-    width: 70px;
-  }
-
-  .main {
-    height: 180vh;
-    background: linear-gradient;
-  }
-
-  .form {
-    width: 250px;
-    height: 380px;
-    background: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.8),
-      50%,
-      rgba(0, 0, 0, 0.8) 50%
-    );
-    position: relative;
-
-    left: 50px;
-    border-radius: 10px;
-    padding: 25px;
-    top: 120px;
-  }
-  .form input {
-    width: 240px;
-    height: 35px;
-    background: transparent;
-    border-bottom: 1px solid red;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    color: #fff;
-    font-size: 15px;
-    letter-spacing: 1px;
-    margin-top: 30px;
-    font-family: sans-serif;
-  }
-
-  .btnn a {
-    font-size: 16px;
-  }
-
-  .form .link a {
-    font-size: 16px;
+    margin-top: -15px;
+    margin-left: 0px;
+    margin-right: 30px;
+    padding-right: 10px;
+    float: left;
   }
   .menu {
-    position: relative;
-    left: 0;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  /*Ipad old version*/
-
-  .content {
-    width: 400px;
-    margin-top: 80px;
-    margin-left: 10px;
-  }
-
-  .search {
-    margin-top: 40px;
-    margin-left: 42px;
+    width: 70%;
+    text-align: center;
   }
   .logo {
-    margin-left: 10px;
-    font-size: 4vw;
   }
 
   ul {
@@ -522,118 +339,20 @@ ul li a:hover {
   }
   ul li {
     margin-left: 30px;
+
+    font-size: 2.5vw;
+    text-align: center;
   }
 
   u li a {
     font-size: 2vw;
   }
-  .search {
-    margin-top: -10px;
-  }
-  .form {
-    width: 200px;
-    left: 20px;
-  }
-  .form input {
-    width: 200px;
-  }
-  .form h2 {
-    width: 175px;
-  }
-  .btnn {
-    width: 175px;
-  }
-  .par {
-    line-height: 25px;
-  }
-}
 
-@media screen and (max-width: 450px) {
-  /*Ipad old version*/
-
-  .content {
-    width: 400px;
-    margin-top: 80px;
-    margin-left: 10px;
-  }
-
-  .search {
-    margin-top: 40px;
-    margin-left: 42px;
-  }
-  .logo {
-    margin-left: 10px;
-    font-size: 4vw;
-  }
-
-  ul {
-    margin-top: -20px;
-    margin-left: -5px;
-  }
-  ul li {
-    margin-left: 30px;
-  }
-
-  u li a {
-    font-size: 2vw;
-  }
-  .search {
-    margin-top: -10px;
-  }
-  .form {
-    width: 200px;
-    left: 10px;
-  }
-  .form input {
-    width: 200px;
-  }
-  .form h2 {
-    width: 175px;
-  }
-  .btnn {
-    width: 175px;
-  }
-  .content .par {
-    line-height: 25px;
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  /*Ipad old version*/
-
-  .content {
-    width: 300px;
-
-    margin: auto;
-  }
-
-  .search {
-    margin-top: 40px;
-    margin-left: 42px;
-  }
-  .logo {
-    margin-left: 10px;
-    font-size: 4vw;
-  }
-
-  ul {
-    margin-top: -20px;
-    margin-left: -5px;
-  }
-  ul li {
-    margin-left: 30px;
-  }
-
-  u li a {
-    font-size: 2vw;
-  }
-  .search {
-    margin-top: -10px;
-  }
   .form {
     width: 210px;
     left: 10px;
+    position: absolute;
+    bottom: 0px;
   }
   .form input {
     width: 205px;
@@ -647,6 +366,7 @@ ul li a:hover {
   .content .par {
     line-height: 25px;
     font-size: 12px;
+    width: 90%;
   }
 
   .icons i {
@@ -667,5 +387,16 @@ ul li a:hover {
     align-items: center;
     justify-content: center;
     font-size: 10px;
+  }
+  .content {
+    width: 90%;
+    top: 270px;
+    position: absolute;
+  }
+  .content span {
+    font-size: 25px;
+  }
+  .content h1 {
+    font-size: 30px;
   }
 }
